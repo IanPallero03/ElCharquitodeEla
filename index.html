@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Charquito de Ela</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="logo-encabezado animado">
+        <img src="imagenes/logo-charquito.webp" alt="Logo El Charquito de Ela">
+        <p class="slogan">Ideas que saltan hacia vos</p>
+      </header>
+      
+    <nav class="nav animado">
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul id="menu" class="menu">
+    
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Objetivos">Objetivos</a></li>
+                <li><a href="#Sobremi">Sobre Mí</a></li>
+                <li><a href="#Reglamento">Reglamento</a></li>
+                <li><a href="#Contacto">Contacto</a> </li>
+            
+            </ul>
+          </nav>
+            <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+    
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+         });
+    </script>
+
+
+<!-- Sección de carousel -->
+
+<div id="Inicio"></div>
+  <a href="#inicio" class="flecha-arriba">&uarr;</a>
+
+  <section id="carousel" class="carousel animado">
+
+    <div class="carousel">
+   <button class="prev">&#10094;</button>
+   
+   <div class="carousel-track-container">
+     <div class="carousel-track">
+ 
+        <li class="carousel-slide current-slide">
+            <div class="slide-contenido">
+              <img src="imagenes/portada1.webp" alt="portada1">
+              <div class="texto-columna">
+                <div class="texto-encima texto-encima1">
+                  <p>
+                    El acceso a la <strong>lectura</strong>, la <strong>escritura</strong> y las <strong>herramientas digitales</strong> no se da en condiciones equitativas para toda la población. Desde esta premisa nace <em>“El charquito de Ela”</em>, una propuesta de consultoría que se posiciona en la intersección entre <strong>alfabetización</strong>, <strong>prácticas culturales</strong> y <strong>extensión bibliotecaria</strong>, con una mirada <strong>situada, comunitaria y creativa</strong>.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="carousel-slide current-slide">
+            <div class="slide-contenido">
+              <img src="imagenes/portada2.webp" alt="portada2">
+              <div class="texto-columna">
+                <div class="texto-encima texto-encima2 ">
+                  <p>
+                    Inspirada en experiencias como el <strong>Biblioburro</strong>, la <strong>Biblioteca Popular “Del otro lado del árbol”</strong>, la <strong>Biblioteca Kankuaka</strong> y proyectos de narración oral como el de <strong>Laura Escuela</strong>, esta propuesta busca construir un espacio <strong>accesible y dinámico</strong> para <strong>mediadores/as, docentes, bibliotecas y organizaciones</strong> que transforman el acceso a la lectura en contextos no tradicionales.
+                  </p>                  
+                </div>
+              </div>
+            </div>
+          </li>
+
+        <li class="carousel-slide current-slide">
+            <div class="slide-contenido">
+              <img src="imagenes/portada3.webp" alt="portada3">
+              <div class="texto-columna">
+                <div class="texto-encima texto-encima3">
+                  <p>
+                    Desde <em>“El charquito de Ela”</em> se entiende la <strong>alfabetización</strong> como un proceso amplio, ligado no solo a la decodificación de textos, sino también a la <strong>apropiación crítica</strong> de los múltiples lenguajes que conforman la vida cotidiana: el <strong>lenguaje escrito</strong>, <strong>visual</strong>, <strong>digital</strong>, <strong>narrativo</strong>, <strong>emocional</strong> y <strong>comunitario</strong>.
+                  </p>                  
+                  </div>
+              </div>
+            </div>
+          </li>
+                     
+
+     </div>
+   </div>
+   <button class="next">&#10095;</button>
+ </div>
+ 
+</section>
+<script>
+ const track = document.querySelector('.carousel-track');
+ const slides = Array.from(track.children);
+ const nextButton = document.querySelector('.next');
+ const prevButton = document.querySelector('.prev');
+ let currentIndex = 0;
+
+ function updateSlide(position) {
+   const container = document.querySelector('.carousel-track-container');
+   const slideWidth = container.clientWidth;
+   track.style.transform = 'translateX(-' + (slideWidth * position) + 'px)';
+ }
+
+ // Avanzar con flechas
+ nextButton.addEventListener('click', () => {
+   currentIndex = (currentIndex + 1) % slides.length;
+   updateSlide(currentIndex);
+ });
+
+ prevButton.addEventListener('click', () => {
+   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+   updateSlide(currentIndex);
+ });
+
+ // 🚀 Cambio automático cada 4 segundos
+ setInterval(() => {
+   currentIndex = (currentIndex + 1) % slides.length;
+   updateSlide(currentIndex);
+ }, 20000); // 4000 milisegundos = 4 segundos
+
+ // Asegura que inicie en la posición correcta
+ window.addEventListener('load', () => {
+   updateSlide(0);
+ });
+ 
+</script>
+
+<section id="Objetivos" class="mini-carousel animado">
+  <div class="mini-carousel-container">
+    <button class="mini-prev"><i class="fas fa-chevron-left"></i></button>
+
+    <div class="mini-carousel-track-container">
+      <div class="mini-carousel-track">
+
+        <div class="mini-slide">
+          <div class="texto-principal">Objetivos</div>
+          <div class="mini-texto">
+            Diseñar y ofrecer <strong>propuestas formativas</strong> y <strong>talleres de alfabetización</strong> (lectora, digital, emocional) que respondan a las necesidades de <strong>distintos grupos sociales</strong>.
+          </div>
+        </div>
+        
+
+        <div class="mini-slide">
+          <div class="texto-principal">Objetivos</div>
+          <div class="mini-texto">
+            Asesorar a <strong>bibliotecas</strong>, <strong>escuelas</strong> y <strong>organizaciones</strong> interesadas en desarrollar <strong>proyectos de extensión</strong> y <strong>promoción de la lectura</strong>.
+          </div>
+        </div>
+        
+
+        <div class="mini-slide">
+          <div class="texto-principal">Objetivos</div>
+          <div class="mini-texto">
+            Acompañar el desarrollo de <strong>prácticas lectoras significativas</strong>, especialmente en <strong>contextos vulnerables</strong> o donde el libro aún no circula como <strong>derecho cultural</strong>.
+          </div>
+        </div>
+        
+    </div>
+
+    <button class="mini-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+
+<script>
+  const miniSlides = document.querySelectorAll('.mini-slide');
+  const miniNext = document.querySelector('.mini-next');
+  const miniPrev = document.querySelector('.mini-prev');
+  let miniIndex = 0;
+
+  function updateMiniSlide(index) {
+    miniSlides.forEach((slide, i) => {
+      slide.classList.remove('current-slide');
+    });
+    miniSlides[index].classList.add('current-slide');
+  }
+
+  miniNext.addEventListener('click', () => {
+    miniIndex = (miniIndex + 1) % miniSlides.length;
+    updateMiniSlide(miniIndex);
+  });
+
+  miniPrev.addEventListener('click', () => {
+    miniIndex = (miniIndex - 1 + miniSlides.length) % miniSlides.length;
+    updateMiniSlide(miniIndex);
+  });
+
+  window.addEventListener('load', () => {
+    updateMiniSlide(0);
+  });
+</script>
+<hr class="separador">
+<!-- Sección de presentacion -->
+
+<section id="Sobremi">
+  <div class="contenido-presentacion animado">
+    <div class="texto-presentacion">
+      <h2>Sobre la creadora</h2>
+<p>
+  Mi nombre es <strong>Ela Pardo</strong>. Soy estudiante avanzada en el campo bibliotecario y promotora de lectura. Creo profundamente en el poder transformador de las palabras y en la necesidad de acercarlas a todas las personas, sin barreras.
+</p>
+<p>
+  Desde muy chica me apasionan las ranas, los libros y la posibilidad de crear entornos amables para aprender y compartir. <em>El charquito de Ela</em> nace de ese deseo: construir un espacio donde alfabetizar sea también cuidar, saltar, jugar y crecer.
+</p>
+<p>
+  Acompaño a <strong>bibliotecas, docentes y espacios culturales</strong> que deseen implementar propuestas de lectura, alfabetización o narración en sus comunidades. Me interesa especialmente trabajar con jóvenes, instituciones educativas y proyectos barriales o comunitarios.
+</p>
+
+    </div>
+    <div class="foto-presentacion">
+      <img src="imagenes/fondo.png" alt="Foto de Ela">
+    </div>
+  </div>
+</section>
+
+<hr class="separador">
+<!-- Sección de video -->
+<section id="Reglamento"</section></section>
+<section class="seccion-video animado">
+  <h2>Video de REGLAMENTO</h2>
+  <video controls>
+    <source src="videos/video.mp4" type="video/mp4">
+    Tu navegador no admite la reproducción de video.
+  </video>
+</section>
+
+
+<hr class="separador">
+
+<!-- Sección de contacto -->
+
+
+<section id="Contacto" class="formulario-contacto animado">
+  <script>
+      const Contacto = document.getElementById('Contacto');
+  
+      Contacto.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("✅ Tu mensaje fue enviado, en breve nos comunicaremos contigo.");
+      formulario.reset(); 
+    });
+  </script>
+    <h2>¿Querés charlar, compartir ideas o invitarme a un proyecto?</h2>
+    <p class="subcomentario">Si te interesa desarrollar un proyecto de lectura, alfabetización o trabajo cultural en tu escuela, biblioteca u organización, no dudes en escribirme.</p>
+  <section id="seccion-contacto" class="formulario-contacto animado">
+    <form class="formulario">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input class="input-text" type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+      </div>
+  
+      <div class="campo">
+        <label for="telefono">Número de Teléfono</label>
+        <input class="input-text" type="tel" id="telefono" name="telefono" placeholder="Tu número" required>
+      </div>
+  
+      <div class="campo">
+        <label for="correo">Correo Electrónico</label>
+        <input class="input-text" type="email" id="correo" name="correo" placeholder="Tu Correo" required>
+      </div>
+  
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea class="input-text" id="mensaje" name="mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
+      </div>
+  
+      <div class="alinear-derecha">
+        <button type="submit" class="boton-enviar">Enviar</button>
+      </div>
+  
+  
+    </form>
+  </section>
+  </section>
+
+  <!-- Botones de contacto flotantes -->
+  
+  <div class="botones-contacto">
+    <a href="https://wa.me/3424390375" class="whatsapp"
+       data-title-es="Enviar WhatsApp"
+       data-title-en="Send WhatsApp"
+       title="Enviar WhatsApp"
+       target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Sección de flecha arriba y Redes-->
+  <a href="#inicio"></a> 
+    <footer>
+      <p>Copyright © 2025 El charquito de Ela. Todos los derechos reservados | All rights reserved.</p>
+      <div class="redes">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    </footer>
+  
+    <script>
+    const animados = document.querySelectorAll('.animado');
+  
+    function mostrarAnimados() {
+      animados.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const alturaPantalla = window.innerHeight;
+  
+        if (top < alturaPantalla - 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', mostrarAnimados);
+    window.addEventListener('load', mostrarAnimados); // por si ya están en pantalla
+  </script>
+  
+
+  </body>
+  </html>
+  
+
+    
