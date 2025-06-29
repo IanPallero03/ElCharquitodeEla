@@ -249,29 +249,30 @@ section {
     max-width: 90%;
 }
 
+
 @media (max-width: 768px) {
     .carousel-track-container {
-        height: 450px;
+        height: 350px;
     }
 
     .carousel-slide {
-        height: 450px;
+        height: 350px;
     }
 
     .carousel-slide img {
-        width: 55%; /* Imagen un poco más ancha */
+        width: 50%; /* Imagen un poco más ancha */
         height: 100%;
     }
 
     .texto-columna {
-        width: 45%; /* Texto un poco más angosto */
+        width: 60%; /* Texto un poco más angosto */
         padding: 1rem;
     }
 
     .texto-columna .texto-encima1,
     .texto-columna .texto-encima2,
     .texto-columna .texto-encima3 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 
