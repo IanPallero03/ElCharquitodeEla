@@ -12,9 +12,13 @@ body {
   background-color: #f8f8f8;
   
 }
-body {
-  overflow-x: hidden; /* bloquea el scroll horizontal */
+html, body {
+  /* Evitar scroll horizontal sin interferir con el scroll vertical normal */
+html { overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+body { overflow-x: hidden; }
+
 }
+
 
 
 @media (max-width: 768px) {
@@ -1171,3 +1175,4 @@ html {
 
 
   
+
