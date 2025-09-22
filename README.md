@@ -1,51 +1,57 @@
-# 🐸 El Charquito de Ela
+# 🐸 El Charquito de Ela  
 
-**El Charquito de Ela** es un sitio web interactivo diseñado para acercar la lectura, la alfabetización y la cultura a escuelas, bibliotecas y espacios comunitarios. Es un proyecto que estoy desarrollando para acompañar una propuesta educativa real, sumando diseño cálido, elementos lúdicos y funcionalidades accesibles.
-
----
-
-## ✨ ¿Qué tiene hasta ahora?
-
-- 🌙 **Botón para personas con daltonismo:** para una experiencia visual cómoda.
-- 🐸 **Animación de ranita saltando:** para aportar calidez y dinamismo.
-- 💧 **Efecto de burbujas flotantes:** que refuerzan la temática del “charquito”.
-- 📬 **Formulario de contacto funcional:** conectado a Formspree.
-- 📱 **Diseño responsivo:** adaptable a computadoras y dispositivos móviles.
-- 🎨 **Estética amigable:** ilustraciones estilo acuarela, colores suaves y tipografía clara.
+**El Charquito de Ela** es un sitio web interactivo pensado para acercar la lectura, la alfabetización y la cultura a **escuelas, bibliotecas y espacios comunitarios**.  
+El proyecto acompaña una propuesta educativa real, combinando un **diseño cálido**, elementos lúdicos y funcionalidades accesibles para todo tipo de usuari@s.  
 
 ---
 
-## 🚧 Estado del proyecto
+## ✨ Características principales  
 
-Este proyecto **está en desarrollo**. Próximas mejoras:
-- 📚 Sección de recomendaciones de libros.
-- 📝 Microartículos o blog de recursos.
-- 🐸 Mini juegos de lectura para niñas/os.
-- 🌱 Recursos descargables para docentes y bibliotecas.
-
----
-
-## 🔧 Tecnologías utilizadas
-
-- **HTML5**
-- **CSS3**
-- **JavaScript (vanilla)**
-- **Formspree** (para el formulario)
-- **particles.js** (para el efecto de burbujas)
-- **GitHub Pages** (hosting)
+- 🌙 **Botón de accesibilidad para personas con daltonismo**: experiencia visual inclusiva.  
+- 🔊 **Botón de lectura automática (text-to-speech)**: desarrollado en **JavaScript puro**.  
+- 🐸 **Animación de ranita saltando**: agrega dinamismo y cercanía.  
+- 💧 **Efecto de burbujas flotantes**: inspirado en la temática del “charquito”.  
+- 📬 **Formulario de contacto funcional**: conectado con **Formspree**.  
+- 📱 **Diseño responsivo**: adaptable a computadoras, tablets y celulares.  
+- 🎨 **Estética amigable**: ilustraciones estilo acuarela, colores suaves y tipografía clara.  
 
 ---
 
-## 🚀 Demo en vivo
+## 🚧 Estado del proyecto  
 
-👉 [**Ver El Charquito de Ela**](https://ianpallero03.github.io/ElCharquitodeEla/)
+Actualmente el sitio está en desarrollo. Próximas funcionalidades a implementar:  
+
+- 📚 **Sección de recomendaciones de libros**.  
+- 📝 **Microartículos y recursos educativos**.  
+- 🐸 **Mini-juegos de lectura interactivos**.  
+- 🌱 **Materiales descargables para docentes y bibliotecas**.  
 
 ---
 
-## 📫 Contacto
+## 🔧 Tecnologías utilizadas  
 
-Si querés sugerir mejoras, darme feedback o sumar ideas, podés abrir un **Issue** o escribirme a través del formulario de contacto que está en el sitio.
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (vanilla)**  
+- **Formspree** → envío de formularios  
+- **particles.js** → efecto de burbujas flotantes  
+- **GitHub Pages** → hosting del sitio  
 
 ---
 
-**Gracias por visitar este charquito de aprendizaje 🐸💧**
+## 🚀 Demo en vivo  
+
+👉 [Visitar El Charquito de Ela](https://ianpallero03.github.io/ElCharquitodeEla/)  
+
+---
+
+## 📫 Contacto  
+
+💌 Si querés sugerir mejoras, dar feedback o sumar ideas:  
+- Abrí un **Issue** en este repositorio.  
+- O escribime a través del [formulario de contacto en la web](https://ianpallero03.github.io/ElCharquitodeEla/#contacto).  
+
+---
+
+Gracias por visitar este **charquito de aprendizaje** 🐸💧  
+
