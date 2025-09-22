@@ -356,15 +356,7 @@ body {
 .modo-boton:active {
   transform: rotate(180deg) scale(1.1);
 }
-@keyframes pulso {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
 
-.modo-boton:hover {
-  animation: pulso 0.6s ease infinite;
-}
 
 
 
@@ -1168,5 +1160,6 @@ html {
 
 
  
+
 
   
